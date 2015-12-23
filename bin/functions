@@ -21,7 +21,7 @@ update_volume_container() {
 # migrate current config/world 
 #  data/serverconfig.xml - server config
 #  data/Saves/serveradmin.xml - steamid admin prefs
-#  Saves - saved worlds based on serveradmin.xml->GameName
+#  data/Saves - saved worlds based on serveradmin.xml->GameName
 migrate_data_into_volume_container() {
 	docker cp data/serverconfig.xml "$SEVENDAYS_VOLUME_CONTAINER":"$SEVENDAYS_DIR"/
 	docker cp data/Saves "$SEVENDAYS_VOLUME_CONTAINER":"$SEVENDAYS_DIR"/
