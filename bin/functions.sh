@@ -11,7 +11,7 @@ update_volume_container() {
 		--interactive \
 		--tty \
 		--volumes-from "$SEVENDAYS_VOLUME_CONTAINER" \
-		steamcmd:auth \
+		steamcmd \
 			+login "$STEAM_LOGIN" "$STEAM_PASSWORD" \
 			+force_install_dir "$SEVENDAYS_DIR" \
 			+app_update "$SEVENDAYS_APPID" validate \

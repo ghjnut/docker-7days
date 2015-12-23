@@ -1,4 +1,4 @@
-FROM steamcmd:auth
+FROM steamcmd
 
 MAINTAINER Jake Pelletier <ghjnut@gmail.com>
 
