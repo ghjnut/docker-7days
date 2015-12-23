@@ -8,8 +8,6 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update \
 	&& apt-get install -y \
 		telnet \
-#		net-tools \
-#		vim \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
