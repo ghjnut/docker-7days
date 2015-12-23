@@ -47,7 +47,7 @@ start_server_container() {
 		--detach \
 		--name "$SEVENDAYS_SERVER_CONTAINER" \
 		--volumes-from "$SEVENDAYS_VOLUME_CONTAINER" \
-		"$SEVENDAYS_SERVER_CONTAINER"
+		"$SEVENDAYS_SERVER_IMAGE"
 }
 
 restart_server_container() {
