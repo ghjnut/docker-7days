@@ -57,7 +57,7 @@ restart_server_container() {
 
 # create telnet session to server (for some reason doesn't work with linked container)
 connect_to_server_container() {
-	docker exec --interactive --tty "$SEVENDAYS_SEVER_CONTAINER" bash -c 'telnet 127.0.0.1 8081'
+	docker exec --interactive --tty "$SEVENDAYS_SERVER_CONTAINER" bash -c 'telnet 127.0.0.1 8081'
 }
 
 stop_server_container() {
