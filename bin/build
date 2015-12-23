@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+[[ "$TRACE" ]] && set -x
+set -eu -o pipefail
+source .env
+source bin/functions
+
+main() {
+	build_volume_container
+	build_server_image
+	update_volume_container
+}
+
+main

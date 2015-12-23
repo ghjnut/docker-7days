@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+[[ "$TRACE" ]] && set -x
+set -eu -o pipefail
+source .env
+source bin/functions
+
+main() {
+	# we telnet in to do a graceful shutdown
+	connect_to_server_container
+	#stop_server_container
+	update_volume_container
+	restart_server_container
+}
+
+main
