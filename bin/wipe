@@ -2,7 +2,7 @@
 [[ "$TRACE" ]] && set -x
 set -eu -o pipefail
 source .env
-source bin/functions
+source bin/functions.sh
 
 # broken, needs to continue executing after telnet shutdown
 main() {
